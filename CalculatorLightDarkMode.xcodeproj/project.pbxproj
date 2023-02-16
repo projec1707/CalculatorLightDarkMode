@@ -11,6 +11,7 @@
 		F11F45F5299E564700F6AA8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F45F4299E564700F6AA8B /* ContentView.swift */; };
 		F11F45F7299E564900F6AA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11F45F6299E564900F6AA8B /* Assets.xcassets */; };
 		F11F45FB299E564900F6AA8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11F45FA299E564900F6AA8B /* Preview Assets.xcassets */; };
+		F11F4602299E5C5600F6AA8B /* image Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F4601299E5C5600F6AA8B /* image Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F11F45F6299E564900F6AA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F11F45F8299E564900F6AA8B /* CalculatorLightDarkMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalculatorLightDarkMode.entitlements; sourceTree = "<group>"; };
 		F11F45FA299E564900F6AA8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F11F4601299E5C5600F6AA8B /* image Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "image Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				F11F45F2299E564700F6AA8B /* CalculatorLightDarkModeApp.swift */,
 				F11F45F4299E564700F6AA8B /* ContentView.swift */,
 				F11F45F6299E564900F6AA8B /* Assets.xcassets */,
+				F11F4601299E5C5600F6AA8B /* image Constants.swift */,
 				F11F45F8299E564900F6AA8B /* CalculatorLightDarkMode.entitlements */,
 				F11F45F9299E564900F6AA8B /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11F4602299E5C5600F6AA8B /* image Constants.swift in Sources */,
 				F11F45F5299E564700F6AA8B /* ContentView.swift in Sources */,
 				F11F45F3299E564700F6AA8B /* CalculatorLightDarkModeApp.swift in Sources */,
 			);
