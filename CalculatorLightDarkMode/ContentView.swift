@@ -8,19 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var lightMode: Bool = true
+    @State var currentComputation: String = ""
+    @State var mainResult: String = "0"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            primaryBackgroundColor
+                .ignoresSafeArea()
+            
+            
+            VStack {
+                SunMoonView(lightMode: lightMode)
+                    .onTapGesture {
+                        withAnimation {
+                            lightMode.toggle()
+                        }
+                    }
+                
+                Spacer()
+                
+                ComputationView(
+                    currentComputation: currentComputation,
+                    mainResult: mainResult)
+                
+                Spacer()
+                
+                CalcsButtonsView(
+                    currentComputation: $currentComputation,
+                    mainResult: $mainResult)
+            }
+            .padding()
         }
-        .padding()
+        
+        .environment(\.colorScheme, lightMode ? .light : .dark)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        VStack {
+            ContentView()
+            
+        }
     }
 }
