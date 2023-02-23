@@ -13,9 +13,24 @@ struct ComputationView: View {
     
     var body: some View {
         VStack {
-            Text(currentComputation)
-            Text(mainResult)
+            HStack {
+                Spacer()
+                Text(currentComputation)
+                    .foregroundColor(foregroundDigitsColor)
+                    .lineLimit(1)
+            }
+            .minimumScaleFactor(0.1)
+            HStack {
+                Spacer()
+                Text(currentComputation)
+                    .foregroundColor(foregroundDigitsColor)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .lineLimit(1)
+            }
+            .minimumScaleFactor(0.1)
         }
+        .padding(.horizontal)
     }
 }
 
