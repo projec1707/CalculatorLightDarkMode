@@ -17,6 +17,7 @@
 		F12B571A29A3997F0046781A /* CalcsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12B571929A3997F0046781A /* CalcsButtonsView.swift */; };
 		F17C21DE29A7D6E30094CC50 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C21DD29A7D6E30094CC50 /* Enumerations.swift */; };
 		F17C21E029A7F3450094CC50 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C21DF29A7F3450094CC50 /* ButtonView.swift */; };
+		F1A118F929AF960D00CA5342 /* String Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A118F829AF960D00CA5342 /* String Helper Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F12B571929A3997F0046781A /* CalcsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcsButtonsView.swift; sourceTree = "<group>"; };
 		F17C21DD29A7D6E30094CC50 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		F17C21DF29A7F3450094CC50 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		F1A118F829AF960D00CA5342 /* String Helper Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String Helper Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				F11F45F2299E564700F6AA8B /* CalculatorLightDarkModeApp.swift */,
 				F11F45F4299E564700F6AA8B /* ContentView.swift */,
 				F12B571929A3997F0046781A /* CalcsButtonsView.swift */,
+				F1A118F829AF960D00CA5342 /* String Helper Functions.swift */,
 				F12B571729A394BB0046781A /* ComputationView.swift */,
 				F17C21DD29A7D6E30094CC50 /* Enumerations.swift */,
 				F17C21DF29A7F3450094CC50 /* ButtonView.swift */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F17C21DE29A7D6E30094CC50 /* Enumerations.swift in Sources */,
+				F1A118F929AF960D00CA5342 /* String Helper Functions.swift in Sources */,
 				F11F4602299E5C5600F6AA8B /* image Constants.swift in Sources */,
 				F17C21E029A7F3450094CC50 /* ButtonView.swift in Sources */,
 				F11F45F5299E564700F6AA8B /* ContentView.swift in Sources */,

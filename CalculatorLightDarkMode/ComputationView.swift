@@ -22,7 +22,7 @@ struct ComputationView: View {
             .minimumScaleFactor(0.1)
             HStack {
                 Spacer()
-                Text(currentComputation)
+                Text(mainResult)
                     .foregroundColor(foregroundDigitsColor)
                     .font(.largeTitle)
                     .fontWeight(.bold)
