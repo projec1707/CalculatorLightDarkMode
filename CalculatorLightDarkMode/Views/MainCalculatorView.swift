@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainCalculatorView: View {
     @State var lightMode: Bool = true
     @State var currentComputation: String = ""
     @State var mainResult: String = "0"
@@ -31,12 +31,19 @@ struct ContentView: View {
                 ComputationView(
                     currentComputation: currentComputation,
                     mainResult: mainResult)
+                .padding(.horizontal,
+                         UIDevice.isIPad ?
+                         UIScreen.main.bounds.width * 0.1 : 0)
                 
                 Spacer()
                 
                 CalcsButtonsView(
                     currentComputation: $currentComputation,
                     mainResult: $mainResult)
+                
+                if UIDevice.isIPad {
+                    Spacer()
+                }
             }
             .padding()
         }
@@ -48,7 +55,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            ContentView()
+            MainCalculatorView()
             
         }
     }

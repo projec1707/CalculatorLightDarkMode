@@ -24,15 +24,17 @@ struct ButtonView: View {
         return value.contains("IMG") ? nil : value
     }
     
-    let buttonDim: CGFloat = UIScreen.main.bounds.width / 5
+    let buttonDim: CGFloat = UIDevice.isIPad ?
+    UIScreen.main.bounds.width / 6 :
+    UIScreen.main.bounds.width / 6
     
     var body: some View {
         ZStack {
             Text(text ?? "")
             Image(systemName: systemImage ?? "")
         }
-        .font(.title2)
-        .fontWeight(.semibold)
+        .font(UIDevice.isIPad ? .largeTitle : .title2)
+        .fontWeight(UIDevice.isIPad ? .heavy : .semibold)
         .frame(width: buttonDim, height: buttonDim)
         .foregroundColor(fgColor)
         .background(bgColor)
